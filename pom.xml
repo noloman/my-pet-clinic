@@ -15,7 +15,7 @@
     </parent>
     <groupId>me.manulorenzo</groupId>
     <artifactId>my-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>my-pet-clinic</name>
     <description>My pet clinic</description>
 
@@ -33,6 +33,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
@@ -40,5 +41,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:noloman/my-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 </project>

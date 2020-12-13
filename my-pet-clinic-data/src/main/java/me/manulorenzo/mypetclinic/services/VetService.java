@@ -1,9 +1,6 @@
 package me.manulorenzo.mypetclinic.services;
 
-public interface VetService {
-    Vet findById(Long id);
+import me.manulorenzo.mypetclinic.model.Vet;
 
-    Vet save(Vet vet);
-
-    Set<Vet> findAll();
+public interface VetService extends CrudService<Vet, Long> {
 }
